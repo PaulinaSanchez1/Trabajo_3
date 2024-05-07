@@ -3,9 +3,9 @@
     "path": "~/GitHub/Trabajo_3/Trabajo_3Quarto.qmd",
     "project_path": "Trabajo_3Quarto.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3457581946",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1715040544642.0,
     "source_on_save": false,
     "relative_order": 2,
@@ -22,11 +22,11 @@
         "rmdVisualModeLocation": "10643:6253.60009765625"
     },
     "folds": "",
-    "lastKnownWriteTime": 1715040770,
+    "lastKnownWriteTime": 1715043064,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1715041080785,
+    "last_content_update": 1715043064989,
     "read_only": false,
     "read_only_alternatives": []
 }

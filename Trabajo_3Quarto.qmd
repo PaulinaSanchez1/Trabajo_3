@@ -107,3 +107,5 @@ En el Gráfico 2 se puede observar que frente a la afirmación "La mujer tiene m
 Respecto al nivel de educación alcanzada y las ideas maternalistas de mujeres jóvenes, el Gráfico 3 señala que en promedio, las mujeres con bajos niveles de educación, tienden a estar de acuerdo con las ideas maternalistas impuestas socialmente. Sin embargo, cuando se observan las mujeres que lograron llegar a la educación superior y postgrado, en promedio ellas tienden a estar en desacuerdo con las ideas maternalistas en torno al rol de la mujer como cuidadora y de madre.
 
 ![](images/promedio_ideas_mater.png)
+
+***Los únicos comentarios que tenemos sobre tu trabajo es que no se ven las categorías de las variables en las tablas y gráficos, lo que dificulta la interpretación. Además, en la tabla de contingencia entre ideas maternalistas y educación es mejor si se muestran los porcentajes del cruce y no solo las frecuencias. Por último, no me queda clara la decisión de trabajar solo con mujeres entre 26 y 29 años.***
