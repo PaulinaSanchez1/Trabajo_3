@@ -107,3 +107,19 @@ Frente a la idea maternalista de cuidado las mujeres de entre 26 y 29 años de e
 Respecto al nivel de educación alcanzada y las ideas maternalistas de mujeres jóvenes, el Gráfico 3 señala que en promedio, las mujeres con bajos niveles de educación, tienden a estar de acuerdo con las ideas maternalistas impuestas socialmente. Sin embargo, cuando se observan las mujeres que lograron llegar a la educación superior y postgrado, en promedio ellas tienden a estar en desacuerdo con las ideas maternalistas en torno al rol de la mujer como cuidadora y de madre.
 
 ![](images/promedio_ideas_mater.png)
+
+-   **Asociación de variables**
+
+En la siguiente imagen, se puede observar el grado se asociación entre las variables sexo, edad, nivel educacional, ideas maternalistas en torno al cuidado, ideas maternalistas en torno a los hijos e ideas maternalistas en general. El azul representa la asociación positiva y el azul la asociación negativa. Tomando en cuenta esto, podemos decir la asociación entre la variable ideas maternalistas en general y las ideas maternalistas en torno al cuidado y a los hijos es alta, pues es mayor a 0.5, pues es de 0.81 y 0.79 respectivamente. Por otro lado, la misma variable resulta tener una asociación muy baja con nivel educacional, pues es sólo de -0.25. Por último, es menester señalar que la variable edad y nivel educacional tienen una asociación moderada de 0.4, esto puede explicarse a que socialmente se espera que con mayor edad, mayor es el nivel educacional alcanzado.
+
+![](images/asociaciondevariable1.png){width="518"}
+
+-   **Escala**
+
+Para esta investigación, se realizó una escala que mide los niveles de maternalismo en jóvenes de Chile. Esto se realizó considerando los altos niveles de correlación entre las tres variables que hacen alusión a ideas maternalistas en torno a cuidado, realización como mujer por los hijos e ideas maternalistas en general. Como se señala en la siguiente imagen, el Alpha de Chronbach nos señala un 0.83, lo que quiere decir que tiene una alta consistencia interna.
+
+![](images/Alfha.png)
+
+A partir de la siguiente imagen, se puede decir que en Chile, los jóvenes tienen ideas maternalistas en un nivel intermedio, ya que la mayor concentración de datos se encuentra en la categoría 12 aproximadamente, teniendo una máxima de 20.
+
+![](images/escala1.png){width="595"}

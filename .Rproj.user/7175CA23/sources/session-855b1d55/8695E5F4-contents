@@ -156,6 +156,7 @@ proc_data$mater_cuidados <- set_labels(proc_data$mater_cuidados,
                                         "De acuerdo"=4,
                                         "Muy de acuerdo"=5))
 
+
 frq(proc_data$mater_cuidados)
 
 #GUARDAR BBDD Filtrada
@@ -441,7 +442,7 @@ ggpairs(proc_data)
 sjPlot::plot_scatter(proc_data, mater_cuidados, nivel_educ)
 
 
-#CONSTRUCCION DE INDICES
+#CONSTRUCCION DE ESCALA
 pacman::p_load(tidyverse, #Conjunto de paquetes, sobre todo dplyr y ggplot2
                car, #Para recodificar
                haven,
@@ -452,10 +453,6 @@ pacman::p_load(tidyverse, #Conjunto de paquetes, sobre todo dplyr y ggplot2
 
 options(scipen = 999) # para desactivar notacion cientifica
 
-view(dfSummary(proc_data, headings=FALSE, graph.col = FALSE))
-
-
-#CONSTRUCCION DE ESCALA
 psych::alpha(dplyr::select(proc_data, mater_hijos, mater_cuidados, ideas_mater))
 
 proc_data <- proc_data %>% 
@@ -468,3 +465,5 @@ ggplot(proc_data, aes(x = ideas_maternalistas)) +
   theme_bw() +
   xlab("Ideas Maternalistas") +
   ylab("Cantidad")
+
+
