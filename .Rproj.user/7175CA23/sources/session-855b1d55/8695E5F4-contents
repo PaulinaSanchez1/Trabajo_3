@@ -336,3 +336,120 @@ ggplot(datos, aes(x =educ_alcanzada, y = promedio)) +
   theme_minimal()+
   ylim(0, 12)
 
+#ASOCIACIÓN DE VARIABLES
+rm(list=ls())       # borrar todos los objetos en el espacio de trabajo
+options(scipen=999) # valores sin notación científica
+
+injuv2022 <- read_dta("input/data_orig/BBDD Respuesta - Encuesta Jóvenes.dta")
+View(injuv2022)
+
+proc_data <- injuv2022 %>% select(SEXO, # sexo
+                                  EDAD, # edad
+                                  P14, # Nivel educacional alcanzado
+                                  P12_1, # Maternalismo cuidados 
+                                  P12_4) # Maternalismo hijos
+
+# Comprobar
+names(proc_data)
+
+sjlabelled::get_label(proc_data)
+
+#Datos perdidos
+proc_data$P14 <- recode(proc_data$P14, "c(98, 99)=NA")
+proc_data$P12_1 <- recode(proc_data$P12_1, "c(98, 99)=NA")
+proc_data$P12_4 <- recode(proc_data$P12_4, "c(98, 99)=NA")
+sum(is.na(proc_data))
+
+proc_data <-na.omit(proc_data)
+dim(proc_data)
+
+proc_data_original <-proc_data
+dim(proc_data)
+
+sum(is.na(proc_data))
+
+proc_data <-na.omit(proc_data)
+dim(proc_data)
+
+
+#Renombrar variables
+
+proc_data <- proc_data %>% rename("nivel_educ"=P14, # Nivel educacional alcanzado
+                                  "mater_cuidados"=P12_1, # Maternalismo cuidados
+                                  "mater_hijos"=P12_4) # Maternalismo hijos
+
+proc_data$nivel_educ <- set_label(x = proc_data$nivel_educ,label = "Nivel educacional alcanzado")
+get_label(proc_data$nivel_educ)                                  
+
+proc_data$mater_cuidados <- set_label(x = proc_data$mater_cuidados,label = "Maternalismo cuidados")
+get_label(proc_data$mater_cuidados)
+
+proc_data$mater_hijos <- set_label(x = proc_data$mater_hijos,label = "Maternalismo hijos")
+get_label(proc_data$mater_hijos)
+
+proc_data$ideas_mater <- (proc_data$mater_cuidados+proc_data$mater_hijos)
+summary(proc_data$ideas_mater)
+
+proc_data$ideas_mater  <- set_label(x = proc_data$ideas_mater, label = "Ideas Maternalistas")
+get_label(proc_data$ideas_mater)
+
+frq(proc_data$nivel_educ)
+
+frq(proc_data$mater_cuidados)
+
+frq(proc_data$mater_hijos)
+
+#asocicion variables
+pacman::p_load(dplyr, # Manipulacion datos
+               sjmisc, # Descriptivos
+               sjPlot, # Tablas
+               sjlabelled, #etiquetas
+               kableExtra, #Tablas
+               GGally, # Correlaciones
+               corrplot) # Correlaciones
+
+options(scipen = 999) # para desactivar notacion cientifica
+
+M <- cor(proc_data, use = "complete.obs") # Usar solo casos con observaciones completas
+corrplot.mixed(M)
+
+M2 <- cor(dplyr::select(proc_data, nivel_educ, mater_hijos, mater_cuidados, ideas_mater), use = "complete.obs")
+corrplot.mixed(M2)
+
+colSums(is.na(proc_data))
+
+#correlacion
+M <- cor(proc_data, use = "complete.obs")
+M
+#listwise
+sjPlot::tab_corr(proc_data, 
+                 triangle = "lower")
+
+#pairwise
+sjPlot::tab_corr(proc_data, 
+                 na.deletion = "pairwise", # espeficicamos tratamiento NA
+                 triangle = "lower")
+
+#gráfico
+proc_data <- proc_data %>%
+  rowwise() %>%
+  mutate(ideas_maternalistas = sum(c(mater_cuidados, mater_hijos), na.rm = TRUE))
+
+ggpairs(proc_data)
+
+#otro grafico
+sjPlot::plot_scatter(proc_data, mater_cuidados, nivel_educ)
+
+
+#CONSTRUCCION DE INDICES
+pacman::p_load(tidyverse, #Conjunto de paquetes, sobre todo dplyr y ggplot2
+               car, #Para recodificar
+               haven,
+               summarytools, #Para descriptivos
+               sjmisc,
+               psych     # para Alfa de Chronbach
+)
+
+options(scipen = 999) # para desactivar notacion cientifica
+
+view(dfSummary(proc_data, headings=FALSE, graph.col = FALSE))
