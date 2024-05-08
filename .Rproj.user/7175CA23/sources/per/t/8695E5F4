@@ -3,9 +3,9 @@
     "path": "~/GitHub/Trabajo_3/processing/Preparacion.R",
     "project_path": "processing/Preparacion.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "3709732439",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1715040505513.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -17,11 +17,11 @@
         "scrollLine": "440"
     },
     "folds": "",
-    "lastKnownWriteTime": 1715189392,
+    "lastKnownWriteTime": 1715209882,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1715209347505,
+    "last_content_update": 1715209882642,
     "read_only": false,
     "read_only_alternatives": []
 }
