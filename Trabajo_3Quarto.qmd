@@ -62,7 +62,9 @@ Con el fin de confirmar o desestimar la hipótesis propuesta, se trabajará con 
 
         -   "Las mujeres que tienen hijos o hijas se sienten más realizadas que aquellas que no tienen hijos o hijas"
 
-Para lograr tener los resultados esperados, se aplicó un filtro a la base de datos, dejando sólo a mujeres de entre 26 y 29 años, pues a esta edad se espera que se haya alcanzado el mayor nivel educacional posible. Las afirmaciones maternalistas están medidas con la Escala de Likert del 1 al 5, a modo que el 1 es "Muy en desacuerdo" y 5 "Muy de acuerdo".
+Para lograr tener los resultados esperados, se aplicó un filtro a la base de datos, dejando sólo a mujeres de entre 26 y 29 años, pues de acuerdo con los resultados del Censo 2017 realizado en Chile, se puede observar que la población alcanzó un mayor nivel educativo aumentando la proporción de personas de 26 años o más que ha aprobado al menos un curso de la educación superior. En este nivel educacional, las mujeres representaban 29,7% en 2017 (IPSUSS, 2018). Dado que la encuesta consta con jóvenes hasta los 29 años de edad, es que el rango etario de esta investigación quedó de 26 a 29 años de edad.
+
+Las afirmaciones maternalistas están medidas con la Escala de Likert del 1 al 5, a modo que el 1 es "Muy en desacuerdo" y 5 "Muy de acuerdo".
 
 ## Visualización de resultados
 
@@ -84,28 +86,24 @@ A continuación, en la Tabla 1 se presenta la descripción de las variables a ut
 
 -   **Tabla 2**
 
-En la Tabla 2 se pueden observar las frecuencias en torno a la variable "Ideas Maternalistas" y el "Nivel educacional alcanzado". Es en base a esta tabla que se puede decir que, las mujeres entre 26 y 29 años que alcanzaron las educación básica y educación media en su mayoría, tienden a estar en un nivel intermedio respecto a las ideas maternalistas con las que están de acuerdo. Sin embargo, las que alcanzan la educación superior y postgrado tienen en su mayoría a estar en desacuerdo con las ideas maternalistas.
+En la Tabla 2 se pueden observar las frecuencias y porcentajes en torno a la variable "Ideas Maternalistas" y el "Nivel educacional alcanzado". Es en base a esta tabla que se puede decir que, las mujeres entre 26 y 29 años que alcanzaron las educación básica y educación media en su mayoría, tienden a estar en un nivel intermedio respecto a las ideas maternalistas con las que están de acuerdo. Sin embargo, las que alcanzan la educación superior y postgrado tienen en su mayoría a estar en desacuerdo con las ideas maternalistas.
 
-![](images/descrip1.png)
+![](images/contingenciaporcentajes.png)
 
 ### Gráficos
 
 -   **Gráfico 1**
 
-En el Gráfico 1 se puede observar que frente a la afirmación "Las mujeres que tienen hijos o hijas se sienten más realizadas que aquellas que no tienen hijos o hijas", las mujeres de entre 26 y 29 años de edad, en su mayoría, tienden a estar "Muy en desacuerdo" con la afirmación.
+En el Gráfico 1 se puede observar ideas maternalistas manifestadas en dos opciones: **Maternalismo cuidados** que hace referencia a la afirmación "La mujer tiene más capacidad que el hombre para desempeñar profesiones que implican el cuidado de otras personas" y **Maternalismo hijos** que hace referencia a la afirmación "Las mujeres que tienen hijos o hijas se sienten más realizadas que aquellas que no tienen hijos o hijas".
 
-![](images/grafico_hijos.png)
+Frente a la idea maternalista de cuidado las mujeres de entre 26 y 29 años de edad en un 31,4%, tienden a estar "Muy de acuerdo" con la afirmación. Mientras que con la idea maternalista de hijos, las mujeres entre 26 y 29 años de edad en un 55,5% tiende a estar muy en desacuerdo con la afirmación. Se puede decir entonces que las ideas maternalistas en torno al rol de la mujer como cuidadora pesan más en la cultura chilena que la idea maternalista de que los hijos hacen que las mujeres se sientan más realizadas.
+
+![](MaterGrafico.png)
+
+*\*La última categoría de respuesta es "Muy de acuerdo"*
 
 -   **Gráfico 2**
-
-En el Gráfico 2 se puede observar que frente a la afirmación "La mujer tiene más capacidad que el hombre para desempeñar profesiones que implican el cuidado de otras personas", las mujeres entre 26 y 29 años tienen a estar "Muy de acuerdo" y " De acuerdo". En comparación a lo observado en el Gráfico 1, las ideas maternalistas en torno al rol de la mujer como cuidadora pesan más en la cultura chilena que la idea maternalista de que los hijos hacen que las mujeres se sientan más realizadas.
-
-![](images/grafico_cuidados.png)
-
--   **Gráfico 3**
 
 Respecto al nivel de educación alcanzada y las ideas maternalistas de mujeres jóvenes, el Gráfico 3 señala que en promedio, las mujeres con bajos niveles de educación, tienden a estar de acuerdo con las ideas maternalistas impuestas socialmente. Sin embargo, cuando se observan las mujeres que lograron llegar a la educación superior y postgrado, en promedio ellas tienden a estar en desacuerdo con las ideas maternalistas en torno al rol de la mujer como cuidadora y de madre.
 
 ![](images/promedio_ideas_mater.png)
-
-***Los únicos comentarios que tenemos sobre tu trabajo es que no se ven las categorías de las variables en las tablas y gráficos, lo que dificulta la interpretación. Además, en la tabla de contingencia entre ideas maternalistas y educación es mejor si se muestran los porcentajes del cruce y no solo las frecuencias. Por último, no me queda clara la decisión de trabajar solo con mujeres entre 26 y 29 años.***

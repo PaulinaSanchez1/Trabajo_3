@@ -3,11 +3,11 @@
     "path": "~/GitHub/Trabajo_3/Trabajo_3Quarto.qmd",
     "project_path": "Trabajo_3Quarto.qmd",
     "type": "quarto_markdown",
-    "hash": "3457581946",
+    "hash": "2528819637",
     "contents": "",
     "dirty": false,
     "created": 1715040544642.0,
-    "source_on_save": false,
+    "source_on_save": true,
     "relative_order": 2,
     "properties": {
         "rmdVisualMode": "true",
@@ -15,18 +15,18 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "90,0",
+        "cursorPosition": "28,0",
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "10643:6253.60009765625"
+        "rmdVisualModeLocation": "6498:2243.199951171875"
     },
     "folds": "",
-    "lastKnownWriteTime": 1715043064,
+    "lastKnownWriteTime": 1715194549,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1715043064989,
+    "last_content_update": 1715194549550,
     "read_only": false,
     "read_only_alternatives": []
 }

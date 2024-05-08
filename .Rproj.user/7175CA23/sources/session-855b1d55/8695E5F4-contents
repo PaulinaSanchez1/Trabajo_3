@@ -1,5 +1,7 @@
 install.packages("pacman")
 
+pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, haven, sjPlot, ggplot2, psych)
+
 pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, haven)
 
 rm(list=ls())       # borrar todos los objetos en el espacio de trabajo
@@ -134,12 +136,34 @@ proc_data$edad_rec <- set_label(x = proc_data$edad_rec,label = "Edad")
 
 frq(proc_data$edad_rec)
 
+
+
+#Cambiar las categorías de respuesta
+
+proc_data$mater_hijos <- set_labels(proc_data$mater_hijos,
+                              labels=c( "Muy en desacuerdo"=1,
+                                        "En desacuerdo"=2,
+                                        "Ni de acuerdo ni en desacuerdo"=3,
+                                        "De acuerdo"=4,
+                                        "Muy de acuerdo"=5))
+
+frq(proc_data$mater_hijos)
+
+proc_data$mater_cuidados <- set_labels(proc_data$mater_cuidados,
+                              labels=c( "Muy en desacuerdo"=1,
+                                        "En desacuerdo"=2,
+                                        "Ni de acuerdo ni en desacuerdo"=3,
+                                        "De acuerdo"=4,
+                                        "Muy de acuerdo"=5))
+
+frq(proc_data$mater_cuidados)
+
 #GUARDAR BBDD Filtrada
 
 proc_data <-as.data.frame(proc_data)
 stargazer(proc_data, type="text")
 
-save(proc_data,file = "C:\\Users\\pauli\\Documents\\GitHub\\Trabajo_2\\input\\data_proc/INJUV_Maternalismo2022.RData")
+save(proc_data,file = "C:\\Users\\pauli\\Documents\\GitHub\\Trabajo_3\\input\\data_proc/INJUV_Maternalismo2022.RData")
 
 
 
@@ -168,6 +192,10 @@ stargazer(proc_data,type = "text")
 sjmisc::descr(proc_data)
 
 #Tabla descriptiva
+sjmisc::descr(proc_data,
+              show = c("label","range", "mean", "sd", "NA.prc", "n"))%>% # Selecciona estadísticos
+  kable(.,"markdown") # Esto es para que se vea bien en quarto
+
 summarytools::dfSummary(proc_data, plain.ascii = FALSE)
 
 view(dfSummary(proc_data, headings=FALSE))
@@ -227,7 +255,7 @@ sjt.xtab(proc_data$educ_alcanzada, proc_data$mater_cuidados)
 
 sjt.xtab(proc_data$educ_alcanzada, proc_data$mater_hijos)
 
-sjt.xtab(proc_data$educ_alcanzada, proc_data$ideas_mater,
+sjt.xtab(proc_data$ideas_mater, proc_data$educ_alcanzada,
          show.col.prc=TRUE,
          show.summary=FALSE,
          encoding = "UTF-8"
@@ -307,5 +335,4 @@ ggplot(datos, aes(x =educ_alcanzada, y = promedio)) +
   labs(x = "Educación", y = "Ideas Maternalistas") +
   theme_minimal()+
   ylim(0, 12)
-
 
